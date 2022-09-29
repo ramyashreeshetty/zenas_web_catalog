@@ -1,6 +1,7 @@
 import streamlit
 import snowflake.connector
 import pandas
+from PIL import Image from urllib.request import urlopen streamlit.image( Image.open(urlopen(df2[0][0])), width = 400, caption=product_caption )
 streamlit.title('Zena\'s Amazing Athleisure Catalog')
 
 # connect to snowflake
